@@ -81,13 +81,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    ASIER FERNANDEZ
                 </div>
 
                 <div class="links">
-                    <a href="contacto">4.1 A</a>
-                    <a href="blog/4">4.1 B</a>
-                    <a href="blog2/19/perro">4.1 C</a>
+                    <a href="https://laravel.com/docs">4.1 -A- </a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>

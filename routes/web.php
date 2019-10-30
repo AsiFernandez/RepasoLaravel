@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('contacto', function () {
+    return view('contacto');
+});
+
+Route::get('blog/{id}', function ($id) {
+    return view('blog', ['identificador' => $id ]) ;
+});
+
+Route::get('blog2/{id}/{nombre}', function ($id, $nombre) {
+    return view('blog2', ['identificador2' => $id, 'nombre' => $nombre ]) ;
+})->where(array('nombre'=>'[a-zA-Z]+','id' => '[0-9]+'));
