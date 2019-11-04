@@ -81,23 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                   Ejercicio 4.2 Apartado B
                 </div>
-
-                <div class="links">
-                Ejercicio 4.1 :
-                    <a href="contacto">4.1 A Nombre</a>
-                    <a href="blog/4">4.1 B Identificador</a>
-                    <a href="blog2/19/perro">4.1 C Identificador y nombre validados</a>
-                    <br>
-                Ejerciocio 4.2: 
-                    
-                    <a href="{{route('saludo')}}">4.2 A</a>
-                    <a href="{{route('saludoConNombre',['nombre'=>'Asier'])}}">4.2 B</a>
-                    <a href="{{route('saludoNombreColor',['nombre'=>'Asier','color'=>'0000FF'])}}">4.2 C</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <h3> Hola!  {{$nombre}} </h3>
+                
             </div>
         </div>
-    </body>
+    </body> 
 </html>

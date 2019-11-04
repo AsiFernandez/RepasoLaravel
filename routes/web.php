@@ -23,6 +23,17 @@ Route::get('blog/{id}', function ($id) {
     return view('blog', ['identificador' => $id ]) ;
 });
 
+Route::pattern('id', '[0-9]+');
+Route::pattern('nombre', '[a-zA-Z]+');
+
 Route::get('blog2/{id}/{nombre}', function ($id, $nombre) {
     return view('blog2', ['identificador2' => $id, 'nombre' => $nombre ]) ;
-})->where(array('nombre'=>'[a-zA-Z]+','id' => '[0-9]+'));
+});
+
+Route::get('saludo', 'SaludoController@saludo')->name('saludo');
+Route::get('saludoConNombre/{nombre}', 'SaludoController@saludoConNombre')->name('saludoConNombre');
+Route::get('saludoConNombre/{nombre}/{color?}', 'SaludoController@saludoNombreColor')->name('saludoNombreColor');
+
+
+
+
