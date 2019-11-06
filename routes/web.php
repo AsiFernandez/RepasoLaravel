@@ -35,5 +35,8 @@ Route::get('saludoConNombre/{nombre}', 'SaludoController@saludoConNombre')->name
 Route::get('saludoConNombre/{nombre}/{color?}', 'SaludoController@saludoNombreColor')->name('saludoNombreColor');
 
 
+Route::get('formulario1', 'FormController@formulario1')->name('formulario1');
+Route::get('formularioSaludo/{nombre}', 'FormController@formularioSaludo')->name('formularioSaludo');
+
 
 

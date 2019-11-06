@@ -78,14 +78,9 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                   Ejercicio 4.2 Apartado B
-                </div>
-                <h3> Hola! {{$nombre}} </h3>
-                
+            
+                <h3> kaixo {{$firstname}} </h3>
             </div>
         </div>
-    </body> 
+    </body>
 </html>

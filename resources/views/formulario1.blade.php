@@ -79,13 +79,14 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                   Ejercicio 4.2 Apartado B
-                </div>
-                <h3> Hola! {{$nombre}} </h3>
-                
+            <form action="{{route('formularioSaludo')}}" method="$_POST">
+                Nombre y Apellido:<br>
+                <input type="text" nombre="nombre">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form> 
+            
             </div>
         </div>
-    </body> 
+    </body>
 </html>

@@ -86,16 +86,26 @@
 
                 <div class="links">
                 Ejercicio 4.1 :
-                    <a href="contacto">4.1 A Nombre</a>
-                    <a href="blog/4">4.1 B Identificador</a>
-                    <a href="blog2/19/perro">4.1 C Identificador y nombre validados</a>
+                    <a href="contacto">4.1 A -Nombre</a>
+                    <a href="blog/4">4.1 B -Identificador</a>
+                    <a href="blog2/19/perro">4.1 C -Identificador y nombre validados</a>
                     <br>
-                Ejerciocio 4.2: 
+                    <br>
+                    <br>
+                Ejercicio 4.2:
                     
-                    <a href="{{route('saludo')}}">4.2 A</a>
-                    <a href="{{route('saludoConNombre',['nombre'=>'Asier'])}}">4.2 B</a>
-                    <a href="{{route('saludoNombreColor',['nombre'=>'Asier','color'=>'0000FF'])}}">4.2 C</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{route('saludo')}}">4.2 A -SALUDAR </a>
+                    <a href="{{route('saludoConNombre',['nombre'=>'Asier'])}}">4.2 B -SALUDAR CON NOMBRE</a>
+                    <a href="{{route('saludoNombreColor',['nombre'=>'Asier','color'=>'0000FF'])}}">4.2 C -SALUDAR CON NOMBRE Y COLOR</a>
+                    <br>
+                    <br>
+                    <br>
+                Ejercicio 4.3:
+                    
+                    <a href="{{route('formulario1')}}">4.3 A -SALUDO DESDE FORMULARIO </a>
+                    <a href="{{route('saludoConNombre',['nombre'=>'Asier'])}}">4.2 B SALUDAR CON NOMBRE</a>
+                    <a href="{{route('saludoNombreColor',['nombre'=>'Asier','color'=>'0000FF'])}}">4.2 C SALUDAR CON NOMBRE Y COLOR</a>
+
                 </div>
             </div>
         </div>

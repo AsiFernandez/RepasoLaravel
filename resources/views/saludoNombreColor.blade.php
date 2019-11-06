@@ -84,7 +84,6 @@
                 <span style="color:#{{$color}}">Kaixo {{$nombre}}!!</span>
                 </div>
                 <p><a href="/">Volver al menú de tareas</a></p>
-                
             </div>
         </div>
     </body> 
