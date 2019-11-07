@@ -36,7 +36,9 @@ Route::get('saludoConNombre/{nombre}/{color?}', 'SaludoController@saludoNombreCo
 
 
 Route::get('formulario1', 'FormController@formulario1')->name('formulario1');
-Route::get('formularioSaludo/{nombre}', 'FormController@formularioSaludo')->name('formularioSaludo');
+Route::get('formularioSaludo/post', 'FormController@formularioSaludo')->name('formularioSaludo');
 
 
+Route::get('storeFormContacto', 'FormController@storeFormContacto')->name('storeFormContacto');
+Route::get('validateform3', 'FormController@validateform3')->name('validateform3');
 

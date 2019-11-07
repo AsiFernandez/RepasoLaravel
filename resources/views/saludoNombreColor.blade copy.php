@@ -79,14 +79,12 @@
                 </div>
             @endif
 
-            <form action="{{route('formularioSaludo')}}" method="$_POST">
-                Nombre y Apellido:<br>
-                <input type="text" nombre="nombre" value="{{old('nombre')}}">
-                <br><br>
-                <input type="submit" value="Submit">
-            </form> 
-            
+            <div class="content">
+                <div class="title m-b-md">
+                <span style="color:#{{$color}}">Kaixo {{$nombre}}!!</span>
+                </div>
+                <p><a href="/">Volver al menú de tareas</a></p>
             </div>
         </div>
-    </body>
+    </body> 
 </html>

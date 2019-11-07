@@ -79,13 +79,29 @@
                 </div>
             @endif
 
-            <form action="{{route('formularioSaludo')}}" method="$_POST">
-                Nombre y Apellido:<br>
-                <input type="text" nombre="nombre" value="{{old('nombre')}}">
-                <br><br>
+            <form action="{{route('validateform3')}}" method="$_POST">
+                @csrf
+                Nombre:<br>
+                <input type="text" name="nombre" value="{{old('nombre')}}">
+                <br>
+                Primer Apellido:<br>
+                <input type="text" name="apellido" value="{{old('apellido')}}"><br>
+                email:<br>
+                <input type="mail" name="mail" value="{{old('mail')}}"><br>
+                Telefono:<br>
+                <input type="number" name="telefono" value="{{old('number')}}"><br>
+
                 <input type="submit" value="Submit">
             </form> 
-            
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             </div>
         </div>
     </body>

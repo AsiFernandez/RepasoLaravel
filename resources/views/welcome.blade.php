@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Asier Fernandez
                 </div>
 
                 <div class="links">
@@ -105,7 +105,10 @@
                     <a href="{{route('formulario1')}}">4.3 A -SALUDO DESDE FORMULARIO </a>
                     <a href="{{route('saludoConNombre',['nombre'=>'Asier'])}}">4.2 B SALUDAR CON NOMBRE</a>
                     <a href="{{route('saludoNombreColor',['nombre'=>'Asier','color'=>'0000FF'])}}">4.2 C SALUDAR CON NOMBRE Y COLOR</a>
-
+                Ejercicio 4.:
+                    
+                    <a href="{{route('storeFormContacto')}}">4.4 A -Validacion de formulario </a>
+                    
                 </div>
             </div>
         </div>

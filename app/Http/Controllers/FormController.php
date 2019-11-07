@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\ContactoValidacion;
 
 class FormController extends Controller
 {
@@ -12,10 +13,20 @@ class FormController extends Controller
     }
 
     function formularioSaludo(Request $request){
+        return view('mostrarDatos');
+    }
 
-        $json = File::get(base_path('database/data/saludos.json'));
+    public function storeFormContacto (request $request){
+        return view('formularioContacto');
+    }
 
-        return view('mostrarDatos',['nombre'=>$nombre]);
+    function validateform3 (ContactoValidacion $request){
+        
+        return view('saludoValidado')->with(
+            'nombre',$request->input('nombre'))->with(
+            'apellido',$request->input('apellido'))->with(
+            'email',$request->input('email'))->with(
+            'telefono',$request->input('telefono'));
     }
     
 }
