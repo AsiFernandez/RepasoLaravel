@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\ContactoValidacion;
-
+use App\Http\Requests\ContactoRequest;   
 class FormController extends Controller
 {
       
@@ -20,8 +19,9 @@ class FormController extends Controller
         return view('formularioContacto');
     }
 
-    function validateform3 (ContactoValidacion $request){
-        
+    function validateform3 (request $request){
+     
+
         return view('saludoValidado')->with(
             'nombre',$request->input('nombre'))->with(
             'apellido',$request->input('apellido'))->with(

@@ -79,29 +79,44 @@
                 </div>
             @endif
 
-            <form action="{{route('validateform3')}}" method="$_POST">
-                @csrf
-                Nombre:<br>
-                <input type="text" name="nombre" value="{{old('nombre')}}">
-                <br>
-                Primer Apellido:<br>
-                <input type="text" name="apellido" value="{{old('apellido')}}"><br>
-                email:<br>
-                <input type="mail" name="mail" value="{{old('mail')}}"><br>
-                Telefono:<br>
-                <input type="number" name="telefono" value="{{old('number')}}"><br>
+            <form action="{{route('validateform3')}}" method="post">
+			@csrf
+			Nombre:<br>
+            <input type="text" id="nombre" name="nombre" value="{{old('nombre')}}">
+                @if ($errors->has('nombre'))
+                    <span class="error">
+                        <strong>{{ $errors->first('nombre') }}</strong>
+                    </span>
+                @endif
+            <br><br>
+            Apellido:<br>
 
-                <input type="submit" value="Submit">
-            </form> 
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+			<input type="text" name="apellido" value="{{old('apellido')}}">
+                @if ($errors->has('apellido'))  
+                    <span class="error">
+                        <strong>{{ $errors->first('apellido') }}</strong>
+                    </span>
+                @endif
+            <br><br>
+			Email:<br>
+			<input type="text" name="email" value="{{old('email')}}">
+                @if ($errors->has('email'))
+                    <span class="error">
+                        <strong>{{ $errors->first('email') }}</strong>
+                    </span>
+                @endif
+            <br><br>
+			Teléfono:<br>
+			<input type="number" name="telefono" value="{{old('telefono')}}">
+                @if ($errors->has('telefono'))
+                    <span class="error">
+                        <strong>{{ $errors->first('telefono') }}</strong>
+                    </span>
+                @endif
+            <br><br>
+			<button type="submit">Enviar</button>
+        </form> 
+            <br>
             </div>
         </div>
     </body>
