@@ -98,6 +98,15 @@
                     </span>
                 @endif
             <br><br>
+            DNI:<br>
+
+			<input type="text" name="dni" value="{{old('dni')}}">
+                @if ($errors->has('apellido'))  
+                    <span class="error">
+                        <strong>{{ $errors->first('apellido') }}</strong>
+                    </span>
+                @endif
+            <br><br>
 			Email:<br>
 			<input type="text" name="email" value="{{old('email')}}">
                 @if ($errors->has('email'))
